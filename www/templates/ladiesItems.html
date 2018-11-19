@@ -1,0 +1,17 @@
+<ion-view title="{{department}}" id="page2">
+  <ion-content padding="true" class="has-header">
+    <a class="list card" ng-repeat="item in items" style="display:block;text-decoration:none;" ui-sref="tabsController.itemDetails( {id: item.id, showAdd: 1} )" id="ladiesItems-card21">
+      <div style="margin: 0px; line-height: 0px; background-color: rgb(232, 235, 239); text-align: center;">
+        <img ng-src="{{item.image}}" style="width:100%" />
+        <!-- <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i> -->
+      </div>
+      <div class="item item-body" id="ladiesItems-list-item-container2">
+        <div id="ladiesItems-markdown2" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">
+            {{item.name}}
+          </p>
+        </div>
+      </div>
+    </a>
+  </ion-content>
+</ion-view>
